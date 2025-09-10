@@ -1,9 +1,10 @@
 # About the Workbench Agent
 The **Workbench-Agent** is a Python script to help you interact with **FossID Workbench** from a terminal or from a CI/CD pipeline. 
 
-The official Workbench Agent maintained by FossID Engineering and subject to FossID's SLAs lives in the [Workbench Agent GitHub Repo](https://github.com/fossid-ab/workbench-agent). 
+This is an experimental version of the Workbench Agent. The official Workbench Agent maintained by FossID Engineering and subject to FossID's SLAs lives in the [Workbench Agent GitHub Repo](https://github.com/fossid-ab/workbench-agent). 
 
-This Experimental version of the Workbench Agent is maintained by the Customer Success Team and not subject to FossID's SLAs. While we will do our best to address any issues, please use the official Workbench Agent if this worries you. 
+## Contributions and Support SLAs
+This Experimental version of the Workbench Agent is maintained by FossID's Customer Success Team and not subject to FossID's SLAs. We will do our best to stay on top of any GitHub Issues opened and review any Pull Requests with fixes and improvements (thank you in advance!) but please use the official Workbench Agent if this presents a concern. Reach out if you have any questions!
 
 # Running with Docker
 This repo publishes a public image to GHCR. Run it with: 
@@ -41,7 +42,6 @@ The following commands are available:
 * show-results: Fetch and display various results for an existing scan.
 * evaluate-gates: Check pending IDs, policy violations, and vulnerabilities.
 * download-reports: download reports for a scan or project.
-
 
 ```bash
 # General Usage is as follows:
@@ -88,7 +88,7 @@ All scan commands support three modes of operation:
 * KB Scan + Dependency Analysis (using `--run-dependency-analysis`)
 
 ### Examples of Scan Command
-Scan takes a path to scan. If the path provided is to a directory, it will be compressed into a ZIP archive prior to upload.
+Scan takes a path to scan. If the path provided is to a directory, it will be compressed into a ZIP archive prior to upload. 
 
 ```bash
 # Uploads the ./src directory for scanning, also runs Dependency Analysis
@@ -146,11 +146,10 @@ ID Assist settings can be controlled by adding the following arguments:
 
 #### Reusing Identifications
 To Reuse Identifications from other Projects or Scans, use the following arguments:
-* --id-reuse -> tells Workbench to reuse identifications
-* --id-reuse-type -> tells Workbench where to reuse identifications from
-* --id-reuse-source -> the project or scan name to reuse identifications from
-
-Note: If only --id-reuse is provided, any available identification will be reused.
+* --reuse-any-identification -> tells Workbench to reuse any identification
+* --reuse-my-identifications -> tells Workbench to reuse identifications made by the invoking user
+* --reuse-scan-ids[scanName] -> reuse identifications from the specified scan
+* --reuse-project-ids [projectName] -> reuse identifications from the specified project
 
 #### Automatic Identifications
 These control which identifications are automatically added to scan results.
