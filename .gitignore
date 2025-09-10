@@ -1,0 +1,37 @@
+# Editors
+.vscode/
+.idea/
+
+# Vagrant
+.vagrant/
+
+# Mac/OSX
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Log file
+log-agent.txt
+workbench-agent-log.txt
+
+# Local Testing Things and Sample Code
+inspiration/
+test-commands.txt
+original-wb-agent.py
+workbench-agent-log.txt
+.venv/
+venv/
+.env
+src/workbench_agent.egg-info/
+
+# Tests
+
+# Coverage
+.coverage*
+
+# Pytest
+.pytest_cache/
+
+# Mypy
+.mypy_cache/

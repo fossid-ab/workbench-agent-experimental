@@ -1,0 +1,155 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "workbench-agent"
+version = "0.8.0"
+description = "Use the Workbench Agent to automate Workbench operations like scanning, gating, and more."
+license = "MIT"
+authors = [
+  {name="Cristian Pana", email="cristian.pana@fossid.com"},
+  {name="Alexandru Zanogeanu", email="alexandru.zanogeanu@fossid.com"},
+  {name="Tomas Gonzalez", email="tomas@fossid.com"}
+]
+
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "requests",
+    "python-dotenv",
+    "GitPython>=3.1.40",
+    "spdx-tools>=0.8.0",
+    "cyclonedx-python-lib[validation]>=7.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-mock>=3.10.0",
+    "flake8>=5.0.0",
+    "black>=22.0.0",
+    "isort>=5.0.0",
+    "mypy>=1.0.0",
+    "pylint>=2.15.0",
+]
+test = [
+    "pytest>=7.0.0",
+    "pytest-mock>=3.6.1",
+    "requests>=2.25.1",
+]
+
+[tool.flake8]
+max-line-length = 100
+# Keep compatible with Black formatting
+extend-ignore = ["E203", "W503"]
+# Tests are allowed a bit more leniency (common in many codebases)
+per-file-ignores = [
+  "tests/**.py:E501,F401,F811",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | inspiration
+)/
+'''
+
+[tool.setuptools.packages.find]
+where = ["src"] 
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+skip = ["inspiration"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+check_untyped_defs = true
+disallow_untyped_decorators = false
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+exclude = [
+    "inspiration/",
+    "build/",
+    "dist/",
+    "*/legacy/*",
+    "tests/",  # Exclude tests from type checking to reduce noise
+]
+ignore_missing_imports = true
+
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "*/tests/*",
+    "*/inspiration/*",
+    "*/__pycache__/*",
+    "*/legacy/*"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "-v",
+    "--tb=short",
+    "--strict-markers"
+]
+filterwarnings = [
+  # Silence known harmless SSL warning from urllib3 in CI
+  "ignore::urllib3.exceptions.NotOpenSSLWarning",
+]
+markers = [
+    "unit: Unit tests",
+    "integration: Integration tests", 
+    "slow: Slow-running tests"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/fossid-ab/workbench-agent"
+"Bug Tracker" = "https://github.com/fossid-ab/workbench-agent/issues"
+
+[project.scripts]
+workbench-agent = "workbench_agent.main:main"
+

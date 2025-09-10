@@ -1,0 +1,48 @@
+# This workflow runs if code is pushed to the MAIN branch.
+# It will tell Workbench to clone the latest state of the branch and scan it.
+
+name: Update Branch Scan
+on: workflow_dispatch
+
+jobs:
+  workbench-scan:
+    runs-on: ubuntu-latest
+    env:
+      WORKBENCH_URL: ${{ secrets.WORKBENCH_URL }}
+      WORKBENCH_USER: ${{ secrets.WORKBENCH_USER }}
+      WORKBENCH_TOKEN: ${{ secrets.WORKBENCH_TOKEN }}
+    steps:
+    - name: Scan by Cloning from Git
+      run: |
+        docker run ghcr.io/fossid-ab/workbench-agent:latest \
+        --api-url ${{ env.WORKBENCH_URL }} \
+        --api-user ${{ env.WORKBENCH_USER }} \
+        --api-token ${{ env.WORKBENCH_TOKEN }} \
+        scan-git \
+        --project-name $GITHUB_REPOSITORY \
+        --scan-name $GITHUB_REF_NAME \
+        --git-url $GITHUB_SERVER_URL/$GITHUB_REPOSITORY \
+        --git-branch $GITHUB_REF_NAME \
+        --git-depth 1 \
+        --id-reuse \
+        --id-reuse-type project \
+        --id-reuse-source $GITHUB_REPOSITORY \
+        --run-dependency-analysis \
+        --autoid-file-licenses \
+        --autoid-file-copyrights \
+        --show-scan-metrics
+
+    - name: Show Scan Results
+      run: |
+        docker run ghcr.io/fossid-ab/workbench-agent:latest \
+        --api-url ${{ env.WORKBENCH_URL }} \
+        --api-user ${{ env.WORKBENCH_USER }} \
+        --api-token ${{ env.WORKBENCH_TOKEN }} \
+        show-results \
+        --project-name $GITHUB_REPOSITORY \
+        --scan-name $GITHUB_REF_NAME \
+        --show-components \
+        --show-dependencies \
+        --show-licenses \
+        --show-policy-warnings \
+        --show-vulnerabilities

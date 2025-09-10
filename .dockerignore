@@ -1,0 +1,8 @@
+./github/workflows
+.vscode
+.gitignore
+.pylintrc
+Dockerfile
+LICENSE
+README.md
+tests/

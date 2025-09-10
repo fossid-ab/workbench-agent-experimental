@@ -1,0 +1,337 @@
+{
+    "repository": {
+        "vcs": {
+            "type": "",
+            "url": "",
+            "revision": "",
+            "path": ""
+        },
+        "vcs_processed": {
+            "type": "",
+            "url": "",
+            "revision": "",
+            "path": ""
+        },
+        "config": {}
+    },
+    "analyzer": {
+        "start_time": "2025-04-15T12:25:23.089056",
+        "end_time": "2025-04-15T12:25:26.644271",
+        "environment": {
+            "ort_version": "fossid-da-1.1.1",
+            "java_version": "unknown",
+            "os": "Linux",
+            "processors": 0,
+            "max_memory": 0,
+            "variables": {
+                "SHELL": "/bin/bash",
+                "TERM": "unknown"
+            },
+            "tool_versions": {}
+        },
+        "config": {
+            "ignore_tool_versions": false,
+            "allow_dynamic_versions": true
+        },
+        "result": {
+            "projects": [
+                {
+                    "id": "NPM::fake-project:0.1.0",
+                    "definition_file_path": "/fossid/uploads/files/scans/50/package.json",
+                    "declared_licenses": [],
+                    "declared_licenses_processed": {},
+                    "vcs": {
+                        "type": "git",
+                        "url": "",
+                        "revision": "0.1.0",
+                        "path": ""
+                    },
+                    "vcs_processed": {
+                        "type": "git",
+                        "url": "",
+                        "revision": "0.1.0",
+                        "path": ""
+                    },
+                    "homepage_url": "",
+                    "scope_names": [
+                        "dependencies",
+                        "dev_dependencies",
+                        "peer_dependencies"
+                    ]
+                }
+            ],
+            "packages": [
+                {
+                    "package": {
+                        "id": "NPM::unicorn-core:1.0.0",
+                        "purl": "pkg:npm/unicorn-core@1.0.0",
+                        "declared_licenses": [
+                            "N/A"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "N/A",
+                            "mapped": {
+                                "N/A": "N/A"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://www.npmjs.com/package/unicorn-core",
+                        "binary_artifact": {
+                            "url": "",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://registry.npmjs.org/unicorn-core/-/unicorn-core-1.0.0.tgz",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "NPM::rainbow-compiler:2.3.4",
+                        "purl": "pkg:npm/rainbow-compiler@2.3.4",
+                        "declared_licenses": [
+                            "N/A"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "N/A",
+                            "mapped": {
+                                "N/A": "N/A"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://www.npmjs.com/package/rainbow-compiler",
+                        "binary_artifact": {
+                            "url": "",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://registry.npmjs.org/rainbow-compiler/-/rainbow-compiler-2.3.4.tgz",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "NPM::ghost-linter:3.1.0",
+                        "purl": "pkg:npm/ghost-linter@3.1.0",
+                        "declared_licenses": [
+                            "N/A"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "N/A",
+                            "mapped": {
+                                "N/A": "N/A"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://www.npmjs.com/package/ghost-linter",
+                        "binary_artifact": {
+                            "url": "",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://registry.npmjs.org/ghost-linter/-/ghost-linter-3.1.0.tgz",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "NPM::warp-speed-engine:42.0.0",
+                        "purl": "pkg:npm/warp-speed-engine@42.0.0",
+                        "declared_licenses": [
+                            "N/A"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "N/A",
+                            "mapped": {
+                                "N/A": "N/A"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://www.npmjs.com/package/warp-speed-engine",
+                        "binary_artifact": {
+                            "url": "",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://registry.npmjs.org/warp-speed-engine/-/warp-speed-engine-42.0.0.tgz",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "NPM::glitch-cli:0.9.9",
+                        "purl": "pkg:npm/glitch-cli@0.9.9",
+                        "declared_licenses": [
+                            "ISC"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "ISC",
+                            "mapped": {
+                                "ISC": "ISC"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://github.com/alex-phillips/glitch",
+                        "binary_artifact": {
+                            "url": "",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://registry.npmjs.org/glitch-cli/-/glitch-cli-0.9.9.tgz",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                }
+            ],
+            "has_issues": false,
+            "dependency_graphs": {
+                "NPM": {
+                    "packages": [
+                        "NPM::unicorn-core:1.0.0",
+                        "NPM::rainbow-compiler:2.3.4",
+                        "NPM::ghost-linter:3.1.0",
+                        "NPM::warp-speed-engine:42.0.0",
+                        "NPM::glitch-cli:0.9.9"
+                    ],
+                    "scopes": {
+                        "::fake-project-0.1.0:dependencies": [
+                            {
+                                "root": 0
+                            },
+                            {
+                                "root": 1
+                            }
+                        ],
+                        "::fake-project-0.1.0:dev_dependencies": [
+                            {
+                                "root": 4
+                            },
+                            {
+                                "root": 2
+                            }
+                        ]
+                    },
+                    "nodes": [
+                        {},
+                        {
+                            "pkg": 1
+                        },
+                        {
+                            "pkg": 2
+                        },
+                        {
+                            "pkg": 3
+                        },
+                        {
+                            "pkg": 4
+                        }
+                    ],
+                    "edges": [],
+                    "has_issues": false
+                }
+            }
+        }
+    },
+    "scanner": null,
+    "advisor": null,
+    "evaluator": null
+}

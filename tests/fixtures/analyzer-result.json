@@ -1,0 +1,967 @@
+{
+    "repository": {
+        "vcs": {
+            "type": "",
+            "url": "",
+            "revision": "",
+            "path": ""
+        },
+        "vcs_processed": {
+            "type": "",
+            "url": "",
+            "revision": "",
+            "path": ""
+        },
+        "config": {}
+    },
+    "analyzer": {
+        "start_time": "2025-04-15T10:22:12.191583",
+        "end_time": "2025-04-15T10:22:54.177546",
+        "environment": {
+            "ort_version": "fossid-da-1.1.1",
+            "java_version": "unknown",
+            "os": "Linux",
+            "processors": 0,
+            "max_memory": 0,
+            "variables": {
+                "SHELL": "/bin/bash",
+                "TERM": "unknown"
+            },
+            "tool_versions": {}
+        },
+        "config": {
+            "ignore_tool_versions": false,
+            "allow_dynamic_versions": true
+        },
+        "result": {
+            "projects": [
+                {
+                    "id": "Maven::None:N/A",
+                    "definition_file_path": null,
+                    "declared_licenses": [],
+                    "declared_licenses_processed": {},
+                    "vcs": {
+                        "type": "",
+                        "url": "",
+                        "revision": "",
+                        "path": ""
+                    },
+                    "vcs_processed": {
+                        "type": "",
+                        "url": "",
+                        "revision": "",
+                        "path": ""
+                    },
+                    "homepage_url": "",
+                    "scope_names": [
+                        "plugins",
+                        "implementation"
+                    ]
+                }
+            ],
+            "packages": [
+                {
+                    "package": {
+                        "id": "Maven:com.github.ben-manes.versions:com.github.ben-manes.versions.gradle.plugin:0.44.0",
+                        "purl": "pkg:maven/com.github.ben-manes.versions/com.github.ben-manes.versions.gradle.plugin@0.44.0",
+                        "declared_licenses": [
+                            "N/A"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "N/A",
+                            "mapped": {
+                                "N/A": "N/A"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://mvnrepository.com/artifact/com.github.ben-manes.versions/com.github.ben-manes.versions.gradle.plugin",
+                        "binary_artifact": {
+                            "url": "",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/com.github.ben-manes.versions/com.github.ben-manes.versions.gradle.plugin/0.44.0/com.github.ben-manes.versions.gradle.plugin-0.44.0.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:None:0.44.0:N/A",
+                        "purl": "pkg:maven/None/0.44.0@N/A",
+                        "declared_licenses": [
+                            "N/A"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "N/A",
+                            "mapped": {
+                                "N/A": "N/A"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://mvnrepository.com/artifact/None/0.44.0",
+                        "binary_artifact": {
+                            "url": "",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:biz.aQute.bnd:biz.aQute.repository:6.4.0",
+                        "purl": "pkg:maven/biz.aQute.bnd/biz.aQute.repository@6.4.0",
+                        "declared_licenses": [
+                            "Apache-2.0",
+                            "EPL-2.0"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "Apache-2.0,EPL-2.0",
+                            "mapped": {
+                                "Apache-2.0,EPL-2.0": "Apache-2.0,EPL-2.0"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://github.com/bndtools/bnd",
+                        "binary_artifact": {
+                            "url": "https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.repository/6.4.0/biz.aQute.repository-6.4.0.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.repository/6.4.0/biz.aQute.repository-6.4.0-sources.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:biz.aQute.bnd:biz.aQute.bnd.util:6.4.0",
+                        "purl": "pkg:maven/biz.aQute.bnd/biz.aQute.bnd.util@6.4.0",
+                        "declared_licenses": [
+                            "Apache-2.0",
+                            "EPL-2.0"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "Apache-2.0,EPL-2.0",
+                            "mapped": {
+                                "Apache-2.0,EPL-2.0": "Apache-2.0,EPL-2.0"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://github.com/bndtools/bnd",
+                        "binary_artifact": {
+                            "url": "https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bnd.util/6.4.0/biz.aQute.bnd.util-6.4.0.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bnd.util/6.4.0/biz.aQute.bnd.util-6.4.0-sources.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:biz.aQute.bnd:biz.aQute.bndlib:6.4.0",
+                        "purl": "pkg:maven/biz.aQute.bnd/biz.aQute.bndlib@6.4.0",
+                        "declared_licenses": [
+                            "Apache-2.0",
+                            "EPL-2.0"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "Apache-2.0,EPL-2.0",
+                            "mapped": {
+                                "Apache-2.0,EPL-2.0": "Apache-2.0,EPL-2.0"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://github.com/bndtools/bnd",
+                        "binary_artifact": {
+                            "url": "https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/6.4.0/biz.aQute.bndlib-6.4.0.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/6.4.0/biz.aQute.bndlib-6.4.0-sources.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:biz.aQute.bnd:biz.aQute.resolve:6.4.0",
+                        "purl": "pkg:maven/biz.aQute.bnd/biz.aQute.resolve@6.4.0",
+                        "declared_licenses": [
+                            "Apache-2.0",
+                            "EPL-2.0"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "Apache-2.0,EPL-2.0",
+                            "mapped": {
+                                "Apache-2.0,EPL-2.0": "Apache-2.0,EPL-2.0"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://github.com/bndtools/bnd",
+                        "binary_artifact": {
+                            "url": "https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.resolve/6.4.0/biz.aQute.resolve-6.4.0.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.resolve/6.4.0/biz.aQute.resolve-6.4.0-sources.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:biz.aQute.bnd:biz.aQute.bnd.embedded-repo:6.4.0",
+                        "purl": "pkg:maven/biz.aQute.bnd/biz.aQute.bnd.embedded-repo@6.4.0",
+                        "declared_licenses": [
+                            "Apache-2.0",
+                            "EPL-2.0"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "Apache-2.0,EPL-2.0",
+                            "mapped": {
+                                "Apache-2.0,EPL-2.0": "Apache-2.0,EPL-2.0"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://github.com/bndtools/bnd",
+                        "binary_artifact": {
+                            "url": "https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bnd.embedded-repo/6.4.0/biz.aQute.bnd.embedded-repo-6.4.0.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bnd.embedded-repo/6.4.0/biz.aQute.bnd.embedded-repo-6.4.0-sources.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:biz.aQute.bnd:biz.aQute.bnd.gradle:6.4.0",
+                        "purl": "pkg:maven/biz.aQute.bnd/biz.aQute.bnd.gradle@6.4.0",
+                        "declared_licenses": [
+                            "Apache-2.0",
+                            "EPL-2.0"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "Apache-2.0,EPL-2.0",
+                            "mapped": {
+                                "Apache-2.0,EPL-2.0": "Apache-2.0,EPL-2.0"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://github.com/bndtools/bnd",
+                        "binary_artifact": {
+                            "url": "https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bnd.gradle/6.4.0/biz.aQute.bnd.gradle-6.4.0.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bnd.gradle/6.4.0/biz.aQute.bnd.gradle-6.4.0-sources.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:com.diffplug.durian:durian-core:1.2.0",
+                        "purl": "pkg:maven/com.diffplug.durian/durian-core@1.2.0",
+                        "declared_licenses": [
+                            "Apache-2.0"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "Apache-2.0",
+                            "mapped": {
+                                "Apache-2.0": "Apache-2.0"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://github.com/diffplug/durian",
+                        "binary_artifact": {
+                            "url": "https://repo1.maven.org/maven2/com/diffplug/durian/durian-core/1.2.0/durian-core-1.2.0.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/com/diffplug/durian/durian-core/1.2.0/durian-core-1.2.0-sources.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:com.diffplug.durian:durian-collect:1.2.0",
+                        "purl": "pkg:maven/com.diffplug.durian/durian-collect@1.2.0",
+                        "declared_licenses": [
+                            "Apache-2.0"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "Apache-2.0",
+                            "mapped": {
+                                "Apache-2.0": "Apache-2.0"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://github.com/diffplug/durian",
+                        "binary_artifact": {
+                            "url": "https://repo1.maven.org/maven2/com/diffplug/durian/durian-collect/1.2.0/durian-collect-1.2.0.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/com/diffplug/durian/durian-collect/1.2.0/durian-collect-1.2.0-sources.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:com.diffplug.durian:durian-io:1.2.0",
+                        "purl": "pkg:maven/com.diffplug.durian/durian-io@1.2.0",
+                        "declared_licenses": [
+                            "Apache-2.0"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "Apache-2.0",
+                            "mapped": {
+                                "Apache-2.0": "Apache-2.0"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://github.com/diffplug/durian",
+                        "binary_artifact": {
+                            "url": "https://repo1.maven.org/maven2/com/diffplug/durian/durian-io/1.2.0/durian-io-1.2.0.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/com/diffplug/durian/durian-io/1.2.0/durian-io-1.2.0-sources.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:com.diffplug.spotless:spotless-lib-extra:2.33.0",
+                        "purl": "pkg:maven/com.diffplug.spotless/spotless-lib-extra@2.33.0",
+                        "declared_licenses": [
+                            "Apache-2.0"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "Apache-2.0",
+                            "mapped": {
+                                "Apache-2.0": "Apache-2.0"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://github.com/diffplug/spotless",
+                        "binary_artifact": {
+                            "url": "https://repo1.maven.org/maven2/com/diffplug/spotless/spotless-lib-extra/2.33.0/spotless-lib-extra-2.33.0.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/com/diffplug/spotless/spotless-lib-extra/2.33.0/spotless-lib-extra-2.33.0-sources.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:com.diffplug.spotless:spotless-lib:2.33.0",
+                        "purl": "pkg:maven/com.diffplug.spotless/spotless-lib@2.33.0",
+                        "declared_licenses": [
+                            "Apache-2.0"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "Apache-2.0",
+                            "mapped": {
+                                "Apache-2.0": "Apache-2.0"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://github.com/diffplug/spotless",
+                        "binary_artifact": {
+                            "url": "https://repo1.maven.org/maven2/com/diffplug/spotless/spotless-lib/2.33.0/spotless-lib-2.33.0.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/com/diffplug/spotless/spotless-lib/2.33.0/spotless-lib-2.33.0-sources.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:org.eclipse.jgit:org.eclipse.jgit:5.13.1.202206130422-r",
+                        "purl": "pkg:maven/org.eclipse.jgit/org.eclipse.jgit@5.13.1.202206130422-r",
+                        "declared_licenses": [
+                            "BSD-3-Clause",
+                            "EDL"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "BSD-3-Clause,EDL",
+                            "mapped": {
+                                "BSD-3-Clause,EDL": "BSD-3-Clause,EDL"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit",
+                        "binary_artifact": {
+                            "url": "https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/5.13.1.202206130422-r/org.eclipse.jgit-5.13.1.202206130422-r.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/5.13.1.202206130422-r/org.eclipse.jgit-5.13.1.202206130422-r-sources.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:com.diffplug.spotless:spotless-plugin-gradle:6.14.0",
+                        "purl": "pkg:maven/com.diffplug.spotless/spotless-plugin-gradle@6.14.0",
+                        "declared_licenses": [
+                            "Apache-2.0"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "Apache-2.0",
+                            "mapped": {
+                                "Apache-2.0": "Apache-2.0"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://github.com/diffplug/spotless",
+                        "binary_artifact": {
+                            "url": "https://repo1.maven.org/maven2/com/diffplug/spotless/spotless-plugin-gradle/6.14.0/spotless-plugin-gradle-6.14.0.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/com/diffplug/spotless/spotless-plugin-gradle/6.14.0/spotless-plugin-gradle-6.14.0-sources.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:com.github.ben-manes:gradle-versions-plugin:0.44.0",
+                        "purl": "pkg:maven/com.github.ben-manes/gradle-versions-plugin@0.44.0",
+                        "declared_licenses": [
+                            "N/A"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "N/A",
+                            "mapped": {
+                                "N/A": "N/A"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://mvnrepository.com/artifact/com.github.ben-manes/gradle-versions-plugin",
+                        "binary_artifact": {
+                            "url": "",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/com.github.ben-manes/gradle-versions-plugin/0.44.0/gradle-versions-plugin-0.44.0.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                },
+                {
+                    "package": {
+                        "id": "Maven:gradle.plugin.com.github.johnrengelman:shadow:7.1.2",
+                        "purl": "pkg:maven/gradle.plugin.com.github.johnrengelman/shadow@7.1.2",
+                        "declared_licenses": [
+                            "N/A"
+                        ],
+                        "declared_licenses_processed": {
+                            "spdx_expression": "N/A",
+                            "mapped": {
+                                "N/A": "N/A"
+                            }
+                        },
+                        "description": "",
+                        "homepage_url": "https://mvnrepository.com/artifact/gradle.plugin.com.github.johnrengelman/shadow",
+                        "binary_artifact": {
+                            "url": "",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "source_artifact": {
+                            "url": "https://repo1.maven.org/maven2/gradle.plugin.com.github.johnrengelman/shadow/7.1.2/shadow-7.1.2.jar",
+                            "hash": {
+                                "value": "",
+                                "algorithm": "MD5"
+                            }
+                        },
+                        "vcs": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        },
+                        "vcs_processed": {
+                            "type": "",
+                            "url": "",
+                            "revision": "",
+                            "path": ""
+                        }
+                    },
+                    "curations": []
+                }
+            ],
+            "has_issues": false,
+            "dependency_graphs": {
+                "Maven": {
+                    "packages": [
+                        "Maven:com.github.ben-manes.versions:com.github.ben-manes.versions.gradle.plugin:0.44.0",
+                        "Maven:None:0.44.0:N/A",
+                        "Maven:biz.aQute.bnd:biz.aQute.repository:6.4.0",
+                        "Maven:biz.aQute.bnd:biz.aQute.bnd.util:6.4.0",
+                        "Maven:biz.aQute.bnd:biz.aQute.bndlib:6.4.0",
+                        "Maven:biz.aQute.bnd:biz.aQute.resolve:6.4.0",
+                        "Maven:biz.aQute.bnd:biz.aQute.bnd.embedded-repo:6.4.0",
+                        "Maven:biz.aQute.bnd:biz.aQute.bnd.gradle:6.4.0",
+                        "Maven:com.diffplug.durian:durian-core:1.2.0",
+                        "Maven:com.diffplug.durian:durian-collect:1.2.0",
+                        "Maven:com.diffplug.durian:durian-io:1.2.0",
+                        "Maven:com.diffplug.spotless:spotless-lib-extra:2.33.0",
+                        "Maven:com.diffplug.spotless:spotless-lib:2.33.0",
+                        "Maven:org.eclipse.jgit:org.eclipse.jgit:5.13.1.202206130422-r",
+                        "Maven:com.diffplug.spotless:spotless-plugin-gradle:6.14.0",
+                        "Maven:com.github.ben-manes:gradle-versions-plugin:0.44.0",
+                        "Maven:gradle.plugin.com.github.johnrengelman:shadow:7.1.2"
+                    ],
+                    "scopes": {
+                        "::build.gradle.kts:plugins": [
+                            {
+                                "root": 0
+                            }
+                        ],
+                        "::build.gradle.kts:implementation": [
+                            {
+                                "root": 7
+                            },
+                            {
+                                "root": 14
+                            },
+                            {
+                                "root": 15
+                            },
+                            {
+                                "root": 16
+                            }
+                        ]
+                    },
+                    "nodes": [
+                        {},
+                        {
+                            "pkg": 1
+                        },
+                        {
+                            "pkg": 2
+                        },
+                        {
+                            "pkg": 3
+                        },
+                        {
+                            "pkg": 4
+                        },
+                        {
+                            "pkg": 5
+                        },
+                        {
+                            "pkg": 6
+                        },
+                        {
+                            "pkg": 7
+                        },
+                        {
+                            "pkg": 8
+                        },
+                        {
+                            "pkg": 9
+                        },
+                        {
+                            "pkg": 10
+                        },
+                        {
+                            "pkg": 11
+                        },
+                        {
+                            "pkg": 12
+                        },
+                        {
+                            "pkg": 13
+                        },
+                        {
+                            "pkg": 14
+                        },
+                        {
+                            "pkg": 15
+                        },
+                        {
+                            "pkg": 16
+                        }
+                    ],
+                    "edges": [
+                        {
+                            "from": 7,
+                            "to": 3
+                        },
+                        {
+                            "from": 7,
+                            "to": 4
+                        },
+                        {
+                            "from": 7,
+                            "to": 2
+                        },
+                        {
+                            "from": 7,
+                            "to": 5
+                        },
+                        {
+                            "from": 7,
+                            "to": 6
+                        },
+                        {
+                            "from": 14,
+                            "to": 12
+                        },
+                        {
+                            "from": 14,
+                            "to": 11
+                        },
+                        {
+                            "from": 14,
+                            "to": 8
+                        },
+                        {
+                            "from": 14,
+                            "to": 10
+                        },
+                        {
+                            "from": 14,
+                            "to": 9
+                        },
+                        {
+                            "from": 14,
+                            "to": 13
+                        }
+                    ],
+                    "has_issues": false
+                }
+            }
+        }
+    },
+    "scanner": null,
+    "advisor": null,
+    "evaluator": null
+}
