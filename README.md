@@ -45,10 +45,10 @@ The following commands are available:
 
 ```bash
 # General Usage is as follows:
-python workbench-agent.py <COMMAND> [OPTIONS...]
+workbench-agent <COMMAND> [OPTIONS...]
 
 # To view the help for a command
-python workbench-agent.py <COMMAND> --help
+workbench-agent <COMMAND> --help
 ```
 
 ### Legacy Invocation (Backwards Compatible with 0.7.x)

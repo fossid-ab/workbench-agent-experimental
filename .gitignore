@@ -27,11 +27,13 @@ src/workbench_agent.egg-info/
 
 # Tests
 
+
 # Coverage
 .coverage*
 
 # Pytest
 .pytest_cache/
+__pycache__/
 
 # Mypy
 .mypy_cache/
