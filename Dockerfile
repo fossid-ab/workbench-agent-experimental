@@ -1,10 +1,13 @@
-FROM cgr.dev/chainguard/python:latest-dev as builder
-WORKDIR /app
-COPY pyproject.toml .
-RUN pip install -e . --user
+# Use a base image with Python and development tools
+FROM python:3.13-slim
 
-FROM cgr.dev/chainguard/python:latest
+# Set the working directory
 WORKDIR /app
-COPY --from=builder /home/nonroot/.local/lib/python3.12/site-packages /home/nonroot/.local/lib/python3.12/site-packages
-COPY workbench-agent.py .
-ENTRYPOINT [ "python", "/app/workbench-agent.py" ]
+
+# Copy the files required for installation
+COPY pyproject.toml .
+COPY src/ ./src/
+
+RUN pip install . --no-cache-dir
+
+ENTRYPOINT [ "workbench-agent" ]
