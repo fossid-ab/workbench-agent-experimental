@@ -1,15 +1,23 @@
 # About the Workbench Agent
 The **Workbench-Agent** is a Python script to help you interact with **FossID Workbench** from a terminal or from a CI/CD pipeline. 
 
-Using the Workbench API, the Workbench Agent helps you manage projects and scans, provide code and execute scans, and interact with results to gate pipelines or save reports.
+The official Workbench Agent maintained by FossID Engineering and subject to FossID's SLAs lives in the [Workbench Agent GitHub Repo](https://github.com/fossid-ab/workbench-agent). 
 
-# Getting Started
-You'll need at least Python 3.9 installed.
+This Experimental version of the Workbench Agent is maintained by the Customer Success Team and not subject to FossID's SLAs. While we will do our best to address any issues, please use the official Workbench Agent if this worries you. 
+
+# Running with Docker
+This repo publishes a public image to GHCR. Run it with: 
+```sh
+docker run ghcr.io/fossid-ab/workbench-agent:experimental --help
+```
+
+## Running with Python
+If you prefer, you can run with Python. You'll need at least Python 3.9 installed.
 
 1.  **Clone the Repository:**
     ```bash
-    git clone github.com/fossid-ab/workbench-agent
-    cd workbench-agent
+    git clone github.com/fossid-ab/workbench-agent-experimental
+    cd workbench-agent-experimental
     ```
 
 2.  **Install Dependencies::**
@@ -20,11 +28,11 @@ You'll need at least Python 3.9 installed.
 3.  **Verify it works:**
     ```bash
     # To view the main help message
-    python workbench-agent.py --help
+    workbench-agent --help
     ```
 
 ## General Usage
-As of Workbench Agent 0.8.0, the following commands are available:
+The following commands are available:
 * scan: Upload local code files or directories for scanning. 
 * scan-git: Clone a Git branch, tag, or commit to scan it.
 * blind-scan: Run a Blind Scan by hashing the scan target before uploading to Workvench.
@@ -44,7 +52,7 @@ python workbench-agent.py <COMMAND> --help
 ```
 
 ### Legacy Invocation (Backwards Compatible with 0.7.x)
-For backwards compatibility, Workbench Agent supports the command syntax from versions prior to 0.8.0, which used the following syntax:
+For backwards compatibility, Workbench Agent supports the command syntax from the official Workbench Agent, which uses the following syntax:
 ```sh
 # Regular Scan
 python3 workbench-agent.py --project_code project --scan_code --scan --path path/to/scan
