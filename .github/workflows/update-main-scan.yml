@@ -16,7 +16,7 @@ jobs:
     steps:
     - name: Scan by Cloning from Git
       run: |
-        docker run ghcr.io/fossid-ab/workbench-agent-experimental/workbench-agent:latest \
+        docker run ghcr.io/fossid-ab/workbench-agent-experimental/workbench-agent:experimental \
         --api-url ${{ env.WORKBENCH_URL }} \
         --api-user ${{ env.WORKBENCH_USER }} \
         --api-token ${{ env.WORKBENCH_TOKEN }} \
@@ -34,7 +34,7 @@ jobs:
 
     - name: Show Scan Results
       run: |
-        docker run ghcr.io/fossid-ab/workbench-agent-experimental/workbench-agent:latest \
+        docker run ghcr.io/fossid-ab/workbench-agent-experimental/workbench-agent:experimental \
         --api-url ${{ env.WORKBENCH_URL }} \
         --api-user ${{ env.WORKBENCH_USER }} \
         --api-token ${{ env.WORKBENCH_TOKEN }} \

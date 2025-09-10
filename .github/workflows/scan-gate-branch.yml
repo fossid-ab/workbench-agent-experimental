@@ -15,7 +15,7 @@ jobs:
     steps:
     - name: Scan by Cloning from Git
       run: |
-        docker run ghcr.io/fossid-ab/workbench-agent-experimental/workbench-agent:latest \
+        docker run ghcr.io/fossid-ab/workbench-agent-experimental/workbench-agent:experimental \
         scan-git \
         --api-url ${{ env.WORKBENCH_URL }} \
         --api-user ${{ env.WORKBENCH_USER }} \
@@ -41,7 +41,7 @@ jobs:
     steps:
     - name: Evaluate Gates; Fail on Issues
       run: |
-        docker run ghcr.io/fossid-ab/workbench-agent-experimental/workbench-agent:latest \
+        docker run ghcr.io/fossid-ab/workbench-agent-experimental/workbench-agent:experimental \
         evaluate-gates \
         --api-url ${{ env.WORKBENCH_URL }} \
         --api-user ${{ env.WORKBENCH_USER }} \
