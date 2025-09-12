@@ -6,12 +6,6 @@ This is an experimental version of the Workbench Agent. The official Workbench A
 ## Contributions and Support SLAs
 This Experimental version of the Workbench Agent is maintained by FossID's Customer Success Team and not subject to FossID's SLAs. We will do our best to stay on top of any GitHub Issues opened and review any Pull Requests with fixes and improvements (thank you in advance!) but please use the official Workbench Agent if this presents a concern. Reach out if you have any questions!
 
-# Running with Docker
-This repo publishes a public image to GHCR. Run it with: 
-```sh
-docker run ghcr.io/fossid-ab/workbench-agent:experimental --help
-```
-
 ## Running with Python
 If you prefer, you can run with Python. You'll need at least Python 3.9 installed.
 
