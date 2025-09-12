@@ -1,26 +1,34 @@
-# This workflow runs if code is pushed to the MAIN branch.
-# It will tell Workbench to clone the latest state of the branch and scan it.
+# This workflow can be triggered to scan a branch and evaluate gates.
+# The workflow will fail if Pending IDs or Policy Violations are found.
 
-name: Update Branch Scan
-on: 
-  push:
-    branches: [ main ]
+name: Scan Branch and Evaluate Gates
+on: workflow_dispatch
 
 jobs:
-  workbench-scan:
+  workbench-scan-gate:
     runs-on: ubuntu-latest
     env:
       WORKBENCH_URL: ${{ secrets.WORKBENCH_URL }}
       WORKBENCH_USER: ${{ secrets.WORKBENCH_USER }}
       WORKBENCH_TOKEN: ${{ secrets.WORKBENCH_TOKEN }}
-    steps:
-    - name: Scan by Cloning from Git
+    steps: #running with Python until we fix the GHCR Image 
+    - name: Checkout Workbench Agent
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install Workbench Agent Dependencies
+      run: pip install .
+
+    - name: Clone from Git and Scan
       run: |
-        docker run ghcr.io/fossid-ab/workbench-agent-experimental/workbench-agent:experimental \
+        workbench-agent scan-git \
         --api-url ${{ env.WORKBENCH_URL }} \
         --api-user ${{ env.WORKBENCH_USER }} \
         --api-token ${{ env.WORKBENCH_TOKEN }} \
-        scan-git \
         --project-name $GITHUB_REPOSITORY \
         --scan-name $GITHUB_REF_NAME \
         --git-url $GITHUB_SERVER_URL/$GITHUB_REPOSITORY \
@@ -30,19 +38,15 @@ jobs:
         --run-dependency-analysis \
         --autoid-file-licenses \
         --autoid-file-copyrights \
-        --show-scan-metrics
+        --no-wait
 
-    - name: Show Scan Results
+    - name: Evaluate Gates; Fail on Issues
       run: |
-        docker run ghcr.io/fossid-ab/workbench-agent-experimental/workbench-agent:experimental \
+        workbench-agent evaluate-gates \
         --api-url ${{ env.WORKBENCH_URL }} \
         --api-user ${{ env.WORKBENCH_USER }} \
         --api-token ${{ env.WORKBENCH_TOKEN }} \
-        show-results \
         --project-name $GITHUB_REPOSITORY \
         --scan-name $GITHUB_REF_NAME \
-        --show-components \
-        --show-dependencies \
-        --show-licenses \
-        --show-policy-warnings \
-        --show-vulnerabilities
+        --fail-on-pending \
+        --fail-on-policy

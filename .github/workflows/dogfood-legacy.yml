@@ -30,7 +30,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install Workbench Agent Dependencies
-        run: pip install -e .
+        run: pip install .
 
 # We omit License Extraction to speed up the scan process.
 # Built-In Env Vars map Branches to Scans in Workbench for this repo's Project.
@@ -48,39 +48,4 @@ jobs:
             --identification_reuse_type specific_project \
             --specific_code Legacy-$GITHUB_REPOSITORY \
             --run_dependency_analysis \
-            --delta_only 
-
-  fossid_blind_scan:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-# Since we're running with Python, install the dependencies.
-# This is not needed when running the container image.
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-
-      - name: Install Workbench Agent Dependencies
-        run: pip install -e .
-
-# We omit License Extraction to speed up the scan process.
-# Built-In Env Vars map Branches to Scans in Workbench for this repo's Project.
-# Additionally, Delta Scan reduces scan time by only scanning new files.
-      - name: Blind Scan on Workspace
-        run: |
-          python workbench-agent.py \
-            --api_url ${{ secrets.WORKBENCH_URL }} \
-            --api_user ${{ secrets.WORKBENCH_USER }} \
-            --api_token ${{ secrets.WORKBENCH_TOKEN }} \
-            --project_code Blind-Legacy-$GITHUB_REPOSITORY \
-            --scan_code Blind-Legacy-$GITHUB_REPOSITORY/$GITHUB_REF_NAME \
-            --path $GITHUB_WORKSPACE \
-            --reuse_identifications \
-            --identification_reuse_type specific_project \
-            --specific_code Blind-Legacy-$GITHUB_REPOSITORY \
-            --blind_scan \
-            --run_dependency_analysis \
-            --delta_only 
+            --delta_only
