@@ -5,8 +5,13 @@ from unittest.mock import patch
 
 import pytest
 
+from workbench_agent.api.validation.field_limits import (
+    PROJECT_NAME_SAFE_MAX_LENGTH,
+    SCAN_NAME_SAFE_MAX_LENGTH,
+)
 from workbench_agent.cli.validators import (
     _validate_api_credentials,
+    _validate_project_scan_target,
     _validate_scan_commands,
     validate_parsed_args,
 )
@@ -202,6 +207,22 @@ class TestValidationEdgeCases:
 
             # Should have been fixed to include /api.php
             assert args.api_url == "https://test.com/api.php"
+
+    def test_project_name_exceeds_max_length(self):
+        args = Namespace(
+            project_name="x" * (PROJECT_NAME_SAFE_MAX_LENGTH + 1),
+            scan_name="TestScan",
+        )
+        with pytest.raises(ValidationError, match="project_name exceeds maximum length"):
+            _validate_project_scan_target(args, scan_required=True)
+
+    def test_scan_name_exceeds_max_length(self):
+        args = Namespace(
+            project_name="TestProject",
+            scan_name="x" * (SCAN_NAME_SAFE_MAX_LENGTH + 1),
+        )
+        with pytest.raises(ValidationError, match="scan_name exceeds maximum length"):
+            _validate_project_scan_target(args, scan_required=True)
 
 
 class TestValidationSpecialCases:

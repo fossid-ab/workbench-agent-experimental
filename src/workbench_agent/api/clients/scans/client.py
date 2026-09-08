@@ -8,6 +8,7 @@ PolicyWarningType = Literal["identifications", "dependencies", "all"]
 import requests
 
 from workbench_agent.api.exceptions import ApiError, ScanNotFoundError
+from workbench_agent.api.validation.field_limits import validate_scan_create_data
 
 from . import helpers
 
@@ -693,6 +694,7 @@ class ScansClient:
             ApiError: If the API call fails
             NetworkError: If there's a network issue
         """
+        validate_scan_create_data(data)
         scan_name = data.get("scan_name", "unknown")
         logger.debug(f"Creating scan '{scan_name}' via API")
 

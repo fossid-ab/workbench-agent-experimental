@@ -5,7 +5,8 @@ from typing import Any, Dict, List, Literal, Optional
 
 PolicyWarningType = Literal["identifications", "dependencies", "all"]
 
-from workbench_agent.api.exceptions import ApiError
+from workbench_agent.api.exceptions import ApiError, ValidationError
+from workbench_agent.api.validation.field_limits import validate_project_create_fields
 
 from . import helpers
 
@@ -196,6 +197,13 @@ class ProjectsClient:
         Required: ``project_name``. Optional ``project_code`` when the client
         supplies the internal identifier; otherwise Workbench assigns one.
         """
+        validate_project_create_fields(
+            project_name=project_name,
+            project_code=project_code,
+            product_code=product_code,
+            product_name=product_name,
+            jira_project_key=jira_project_key,
+        )
         payload_data: Dict[str, Any] = {"project_name": project_name}
         if project_code:
             payload_data["project_code"] = project_code
