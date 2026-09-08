@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "workbench-agent-ce"
-version = "0.11.0"
+version = "0.11.1"
 description = "Workbench Agent CE provides API and CLI interaction with FossID Workbench."
 license = "MIT"
 authors = [
